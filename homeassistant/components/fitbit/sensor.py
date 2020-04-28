@@ -502,7 +502,7 @@ class FitbitSensor(Entity):
                     self._state = raw_state
                 else:
                     try:
-                        self._state = f"{int(raw_state):,}"
+                        self._state = f"{int(raw_state)}"
                     except TypeError:
                         self._state = raw_state
 
